@@ -1,0 +1,22 @@
+.bombshellpink{
+  color:#EC008B;
+}
+.bombshellHeading{
+  font-family:'alternate-gothic-no-1-d';
+  font-weight:400;
+  font-style:normal;
+  font-size: 120px;
+}
+.bombshellSubHeading{
+  font-family:'lakeside';
+  font-weight:400;
+  font-style:normal;
+}
+
+.tileleft{
+  padding-left:0px;
+}
+
+.tileright{
+  padding-right:0px
+}
