@@ -20,3 +20,32 @@
 .tileright{
   padding-right:0px
 }
+
+.tileFancy{
+  font-family:'lakeside';
+  font-weight:400;
+  font-style:normal;
+  font-size:60px;
+  color:black;
+  border:1px solid black;
+  border-left:none;
+  border-right:none;
+  padding-left:15px;
+  padding-right:15px;
+  padding-bottom:10px;
+
+}
+.tileBlock{
+  font-family:'alternate-gothic-no-1-d';
+  font-weight:400;
+  font-style:normal;
+  font-size:60px;
+  color:black;
+  border:1px solid black;
+  border-left:none;
+  border-right:none;
+  padding-left:15px;
+  padding-right:15px;
+  padding-bottom:0px;
+  padding-top:10px;
+}
