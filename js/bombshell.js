@@ -8,4 +8,14 @@ $(document).ready(function(){
 
 
 
+
+  $(".storytile").mouseover(function(){
+    $(this).css("cursor","pointer");
+  })
+  $(".storytile").click(function(){
+    window.location.href= "story.html";
+  })
+
+
+
 })
