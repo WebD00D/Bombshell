@@ -8,7 +8,7 @@
   font-size: 120px;
 }
 .bombshellSubHeading{
-  font-family:'lakeside';
+  font-family:'kinescope';
   font-weight:400;
   font-style:normal;
 }
@@ -22,12 +22,12 @@
 }
 
 .tileFancy{
-  font-family:'lakeside';
+  font-family:'kinescope';
   font-weight:400;
   font-style:normal;
   font-size:60px;
   color:black;
-  border:1px solid black;
+  border:1px solid white;
   border-left:none;
   border-right:none;
   padding-left:15px;
@@ -41,7 +41,7 @@
   font-style:normal;
   font-size:60px;
   color:black;
-  border:1px solid black;
+  border:1px solid white;
   border-left:none;
   border-right:none;
   padding-left:15px;
