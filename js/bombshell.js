@@ -37,6 +37,41 @@ $(document).ready(function(){
     window.location.href= "SpecialsLocation.html";
   })
 
+  $(".bookingTile").mouseover(function(){
+    $(this).css("cursor","pointer");
+  })
+  $(".bookingTile").click(function(){
+    window.location.href= "google.com";
+  })
+
+  $(".giftcardTile").mouseover(function(){
+    $(this).css("cursor","pointer");
+  })
+  $(".giftcardTile").click(function(){
+    window.location.href= "google.com";
+  })
+
+  $(".partyTile").mouseover(function(){
+    $(this).css("cursor","pointer");
+  })
+  $(".partyTile").click(function(){
+    window.location.href= "Parties.html";
+  })
+
+  $(".blogTile").mouseover(function(){
+    $(this).css("cursor","pointer");
+  })
+  $(".blogTile").click(function(){
+    window.location.href= "google.com";
+  })
+
+  $(".weddingTile").mouseover(function(){
+    $(this).css("cursor","pointer");
+  })
+  $(".weddingTile").click(function(){
+    window.location.href= "Weddings.html";
+  })
+
 
 
 })
