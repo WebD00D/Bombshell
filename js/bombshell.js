@@ -23,6 +23,20 @@ $(document).ready(function(){
     window.location.href= "story.html";
   })
 
+  $(".serviceTile").mouseover(function(){
+    $(this).css("cursor","pointer");
+  })
+  $(".serviceTile").click(function(){
+    window.location.href= "ServiceLocation.html";
+  })
+
+  $(".specialsTile").mouseover(function(){
+    $(this).css("cursor","pointer");
+  })
+  $(".specialsTile").click(function(){
+    window.location.href= "SpecialsLocation.html";
+  })
+
 
 
 })
