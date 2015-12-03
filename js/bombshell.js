@@ -22,6 +22,14 @@ $(document).ready(function(){
   $(".storytile").click(function(){
     window.location.href= "story.html";
   })
+  $(".service_img").mouseover(function(){
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-7f8608f5-4a20-4f39-b35e-a1181ceb7c20-Kaitlyn_Bombshell_1.jpg)");
+    $(this).css("background-size","cover");
+  })
+  $(".service_img").mouseout(function(){
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-7f8608f5-4a20-4f39-b35e-a1181ceb7c20-Kaitlyn_Bombshell_1.jpg)");
+    $(this).css("background-size","cover");
+  })
 
   $(".serviceTile").mouseover(function(){
     $(this).css("cursor","pointer");
@@ -36,6 +44,14 @@ $(document).ready(function(){
   $(".specialsTile").click(function(){
     window.location.href= "SpecialsLocation.html";
   })
+  $(".specials_img").mouseover(function(){
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-9b5f4f11-de46-4efc-b6d2-e548ca4f243a-SunBum.jpg)");
+    $(this).css("background-size","cover");
+  })
+  $(".specials_img").mouseout(function(){
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-9b5f4f11-de46-4efc-b6d2-e548ca4f243a-SunBum.jpg)");
+    $(this).css("background-size","cover");
+  })
 
   $(".bookingTile").mouseover(function(){
     $(this).css("cursor","pointer");
@@ -49,6 +65,14 @@ $(document).ready(function(){
   })
   $(".giftcardTile").click(function(){
     window.location.href= "google.com";
+  })
+  $(".giftcard_img").mouseover(function(){
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-76ac575e-b948-4c05-9499-b1e0daf6d9bc-Bombshell_GiftCards.jpg)");
+    $(this).css("background-size","cover");
+  })
+  $(".giftcard_img").mouseout(function(){
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-76ac575e-b948-4c05-9499-b1e0daf6d9bc-Bombshell_GiftCards.jpg)");
+    $(this).css("background-size","cover");
   })
 
   $(".partyTile").mouseover(function(){
