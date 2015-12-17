@@ -53,11 +53,8 @@
 
        <div class="input-field center-align" style="margin-left:25%;margin-right:25%">
          <select id="dlLocationSelect" class="browser-default">
-           <option value="" disabled selected>Choose a location</option>
-           <option value="VA_Cary">Carytown (VA)</option>
-           <option value="VA_SS">South Side (VA)</option>
-           <option value="VA_SP">Short Pump (VA)</option>
-           <option value="NV_DT">Las Vegas  (NV)</option>
+
+
          </select>
          <Br>
           <a href="#" id="btnViewServices" class="btn-large waves-effect waves-light black  lighten-1 ">VIEW SERVICES</a>
@@ -105,6 +102,36 @@
   <script>
 
   $(document).ready(function(){
+
+    // INITIALIZE DEE PARSSSSSE
+     Parse.initialize("6lwXuEam4Zl0heDrMSPQtRx2xcaLM792aRNjw1gF", "hvatZD2xQvA6mmL77SDQsc9T6kqrqLo8PbUmDswC");
+
+    //load locations
+    var Locations = Parse.Object.extend("Locations");
+    var query = new Parse.Query(Locations);
+    query.find({
+      success: function(results) {
+        alert("Successfully retrieved " + results.length + " locations.");
+          // Do something with the returned Parse.Object values
+            for (var i = 0; i < results.length; i++) {
+              var object = results[i];
+
+              
+
+              var content = "<option value='"+ object.id +"'>"+object.get('Name')+ " ("+ object.get('StateCode') +")</option>"
+
+              $(content).appendTo("#dlLocationSelect");
+
+
+            }
+            var disabledoption = "<option value='' disabled selected>Choose a location</option>"
+            $(disabledoption).prependTo("#dlLocationSelect");
+          },
+          error: function(error) {
+            alert("Error: " + error.code + " " + error.message);
+          }
+        });
+
 
     $("#btnViewServices").click(function(){
       var locationSelected = $("#dlLocationSelect option:selected").val();
