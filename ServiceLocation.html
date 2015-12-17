@@ -111,18 +111,10 @@
     var query = new Parse.Query(Locations);
     query.find({
       success: function(results) {
-        alert("Successfully retrieved " + results.length + " locations.");
-          // Do something with the returned Parse.Object values
             for (var i = 0; i < results.length; i++) {
               var object = results[i];
-
-              
-
               var content = "<option value='"+ object.id +"'>"+object.get('Name')+ " ("+ object.get('StateCode') +")</option>"
-
               $(content).appendTo("#dlLocationSelect");
-
-
             }
             var disabledoption = "<option value='' disabled selected>Choose a location</option>"
             $(disabledoption).prependTo("#dlLocationSelect");
