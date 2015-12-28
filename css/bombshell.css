@@ -1,4 +1,14 @@
 
+.serviceTile {padding-left:7px;padding-top:10px;}
+.storytile {padding-top:10px;padding-left:0px;padding-right:0px;}
+.bookingTile {padding-right:0px;padding-top:10px;}
+.specialsTile {padding-left:0px;padding-top:7px}
+.giftcardTile {padding-right:0px;padding-top:7px}
+.partyTile {padding-left:0px;padding-top:7px}
+.blogTile {padding-top:7px}
+.weddingTile {padding-right:0px;padding-top:7px}
+
+
 /* label color */
  .input-field label {
    color: #ec407a ;
@@ -17,7 +27,9 @@
    box-shadow: 0 1px 0 0 #000;
    color:black;
  }
-
+ #logome{
+   height:150px;
+ }
 
 
 .bombshellpink{
@@ -28,11 +40,15 @@
   font-weight:400;
   font-style:normal;
   font-size: 120px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .bombshellSubHeading{
   font-family:'kinescope';
   font-weight:400;
   font-style:normal;
+  margin-top:8%;
+  margin-bottom:0px;
 }
 
 .tileleft{
@@ -70,4 +86,23 @@
   padding-right:15px;
   padding-bottom:0px;
   padding-top:10px;
+}
+
+
+
+
+@media only screen and (max-width : 600px) {
+
+  #logome{height:120px;}
+  .bombshellHeading{font-size: 80px;}
+  .bombshellSubHeading{font-size: 40px;margin-top:15%;margin-bottom:0px;}
+  .serviceTile{padding-left:10px;padding-top:10px;padding-right:10px;}
+  .storytile {padding-top:10px;margin-top:15px;}
+  .bookingTile {padding-right:0px;padding-top:7px;margin-top:15px;}
+  .testimonials{display:none;}
+  .specialsTile {padding-left:0px;padding-top:7px}
+  .giftcardTile {margin-right:10px;padding-top:7px;margin-top:15px;}
+  .partyTile {padding-left:0px;padding-top:7px}
+  .blogTile {margin-top:15px}
+  .weddingTile {padding-right:0px;margin-top:15px}
 }
