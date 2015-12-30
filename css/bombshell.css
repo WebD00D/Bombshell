@@ -1,5 +1,5 @@
 
-.serviceTile {padding-left:7px;padding-top:10px;}
+.serviceTile {padding-left:7x;padding-top:10px;}
 .storytile {padding-top:10px;padding-left:0px;padding-right:0px;}
 .bookingTile {padding-right:0px;padding-top:10px;}
 .specialsTile {padding-left:0px;padding-top:7px}
@@ -8,33 +8,61 @@
 .blogTile {padding-top:7px}
 .weddingTile {padding-right:0px;padding-top:7px}
 
+#servicesBlock{
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-7f8608f5-4a20-4f39-b35e-a1181ceb7c20-Kaitlyn_Bombshell_1.jpg);
+background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+}
+#storyBlock{
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://2h9fw6visbn2ilapl18sowp1.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/videoshoot10.jpg);
+background-size:cover;height:300px;padding-left:0px;padding-top:28%;
+}
+
+#bookingBlock{
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.varji.com/assets/images/backgrounds/salon.jpg);
+background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+}
+
+#specialsBlock{
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-9b5f4f11-de46-4efc-b6d2-e548ca4f243a-SunBum.jpg);
+background-size:cover;height:300px;padding-left:0px;padding-top:14%
+}
+
+#giftCardBlock{
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-76ac575e-b948-4c05-9499-b1e0daf6d9bc-Bombshell_GiftCards.jpg);
+background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+}
+
+#partyBlock{
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg);
+background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+}
+
+#blogBlock{
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg);
+background-size:cover;height:300px;padding-left:0px;padding-top:23%;
+}
+
+#weddingBlock{
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://wowvipevents.com/wp-content/uploads/2015/02/image4.jpg);
+background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+}
 
 /* label color */
- .input-field label {
-   color: #ec407a ;
- }
+ .input-field label {color: #ec407a ;}
+ .input-field input[type=text]{color:black;}
 
- .input-field input[type=text]{
-    color:black;
- }
  /* label focus color */
- .input-field input[type=text]:focus + label {
-   color: #ec407a ;
- }
+ .input-field input[type=text]:focus + label {color: #ec407a ;}
+
  /* label underline focus color */
- .input-field input[type=text]:focus {
-   border-bottom: 1px solid #000;
-   box-shadow: 0 1px 0 0 #000;
-   color:black;
- }
- #logome{
-   height:150px;
- }
+ .input-field input[type=text]:focus {border-bottom: 1px solid #000;box-shadow: 0 1px 0 0 #000;color:black;}
+
+ #logome{height:150px;}
 
 
-.bombshellpink{
-  color:#EC008B;
-}
+.bombshellpink{color:#EC008B;}
+.service_img{padding-top:25%;}
+
 .bombshellHeading{
   font-family:'alternate-gothic-no-1-d';
   font-weight:400;
@@ -86,12 +114,135 @@
   padding-right:15px;
   padding-bottom:0px;
   padding-top:10px;
+
+}
+
+@media only screen and (max-width : 1000px) {
+
+  #logome{height:120px;}
+  .bombshellHeading{font-size: 80px;}
+  .bombshellSubHeading{font-size: 40px;margin-top:15%;margin-bottom:0px;}
+  .serviceTile{padding-left:10px;padding-top:10px;padding-right:10px;}
+  .storytile {padding-top:10px;margin-top:15px;}
+  .bookingTile {padding-right:0px;padding-top:7px;margin-top:15px;}
+  .testimonials{display:none;}
+  .specialsTile {padding-left:0px;padding-top:7px}
+  .giftcardTile {margin-right:10px;padding-top:7px;margin-top:15px;}
+  .partyTile {padding-left:0px;padding-top:7px}
+  .blogTile {margin-top:15px}
+  .weddingTile {padding-right:0px;margin-top:15px}
+
+  #servicesBlock{
+  padding-top:10%;
+  }
+  #storyBlock{
+    padding-top:10%;
+  }
+  #bookingBlock{
+    padding-top:10%;
+  }
+  #specialsBlock{
+    padding-top:10%;
+  }
+  #giftCardBlock{
+    padding-top:10%;
+  }
+  #partyBlock{
+    padding-top:10%;
+  }
+  #blogBlock{
+    padding-top:10%;
+  }
+  #weddingBlock{
+    padding-top:10%;
+  }
 }
 
 
+@media only screen and (max-width:800px){
 
+  .tileFancy{
+    font-family:'kinescope';
+    font-weight:400;
+    font-style:normal;
+    font-size:40px;
+    color:black;
+    border:1px solid white;
+    border-left:none;
+    border-right:none;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:10px;
+
+  }
+  .tileBlock{
+    font-family:'alternate-gothic-no-1-d';
+    font-weight:400;
+    font-style:normal;
+    font-size:40px;
+    color:black;
+    border:1px solid white;
+    border-left:none;
+    border-right:none;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:0px;
+    padding-top:10px;
+
+  }
+
+  #servicesBlock{
+  padding-top:15%;
+  }
+  #storyBlock{
+    padding-top:18%;
+  }
+  #bookingBlock{
+    padding-top:15%;
+  }
+  #specialsBlock{
+    padding-top:15%;
+  }
+  #giftCardBlock{
+    padding-top:15%;
+  }
+  #partyBlock{
+    padding-top:15%;
+  }
+  #blogBlock{
+    padding-top:15%;
+  }
+  #weddingBlock{
+    padding-top:15%;
+  }
+}
 
 @media only screen and (max-width : 600px) {
+
+  #servicesBlock{
+  padding-top:25%;
+  }
+  #storyBlock{
+    padding-top:28%;
+  }
+  #bookingBlock{
+    padding-top:25%;
+  }
+  #specialsBlock{
+    padding-top:28%;
+  }
+  #giftCardBlock{
+    padding-top:25%;
+  }
+  #partyBlock{
+    padding-top:25%;
+  }
+  #blogBlock{
+    padding-top:23%;
+  }
+  #weddingBlock{
+    padding-top:23%;
+  }
 
   #logome{height:120px;}
   .bombshellHeading{font-size: 80px;}

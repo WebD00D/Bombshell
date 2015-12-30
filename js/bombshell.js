@@ -44,11 +44,11 @@ $(document).ready(function(){
   $(".specialsTile").click(function(){
     window.location.href= "SpecialsLocation.html";
   })
-  $(".specials_img").mouseover(function(){
+  $("#specialsBlock").mouseover(function(){
     $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-9b5f4f11-de46-4efc-b6d2-e548ca4f243a-SunBum.jpg)");
     $(this).css("background-size","cover");
   })
-  $(".specials_img").mouseout(function(){
+  $("#specialsBlock").mouseout(function(){
     $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-9b5f4f11-de46-4efc-b6d2-e548ca4f243a-SunBum.jpg)");
     $(this).css("background-size","cover");
   })
