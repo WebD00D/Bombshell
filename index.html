@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" href="css/bombshell.css">
     <!-- Adobe Type Kit -->
     <script src="https://use.typekit.net/mhf2njr.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
-  <body>
+  <body >
 
   <!-- header begin -->
   <div id="index-banner" class="parallax-container" >
@@ -21,26 +22,26 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.html" class="brand-logo" style="padding-top:15px" ><img id="logome" src="http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-0ed7deb8-14c3-4540-bc9a-2312f00a1e3a-bombshellupdateed.jpg"></a>
       <ul class="right hide-on-med-and-down ">
-        <li><a class='bombshellpink' href="ServiceLocation.html"> Services</a></li>
-        <li><a class='bombshellpink' href="#"> Booking</a></li>
-        <li><a class='bombshellpink' href="story.html"> Story & Culture</a></li>
-        <li><a class='bombshellpink' href="#"> Specials</a></li>
-        <li><a class='bombshellpink dropdown-button' data-beloworigin="true" data-constrainwidth="false" data-hover='true' href="#" data-activates='dropdown1'> Extras</a></li>
+        <li><a class='bombshellpink linkit' href="ServiceLocation.html" >  Services</a></li>
+        <li><a class='bombshellpink linkit' href="#"> Booking</a></li>
+        <li><a class='bombshellpink linkit' href="story.html"> Story & Culture</a></li>
+        <li><a class='bombshellpink linkit' href="#"> Specials</a></li>
+        <li><a class='bombshellpink dropdown-button linkit' data-beloworigin="true" data-constrainwidth="false" data-hover='true' href="#" data-activates='dropdown1'> Extras</a></li>
 
       </ul>
 
       <!-- Dropdown Structure -->
       <ul id='dropdown1' class='dropdown-content bombshellpink' >
-        <li><a class="bombshellpink" href="#!" style="color:#26424F">Weddings</a></li>
-        <li><a class="bombshellpink" href="#!" style="color:#26424F">Gift Cards</a></li>
-        <li><a class="bombshellpink" href="#!" style="color:#26424F">Blog</a></li>
-        <li><a class="bombshellpink" href="#!" style="color:#26424F"> Tips</a></li>
+        <li><a class="bombshellpink linkit" href="#!" style="color:#26424F">Weddings</a></li>
+        <li><a class="bombshellpink linkit" href="#!" style="color:#26424F">Gift Cards</a></li>
+        <li><a class="bombshellpink linkit" href="#!" style="color:#26424F">Blog</a></li>
+        <li><a class="bombshellpink linkit" href="#!" style="color:#26424F"> Tips</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-      <li><a class='bombshellpink' href="#"> Link</a></li>
-      <li><a class='bombshellpink' href="#"> Link</a></li>
-      <li><a class='bombshellpink' href="#"> Link</a></li>
+      <li><a class='bombshellpink linkit' href="#"> Link</a></li>
+      <li><a class='bombshellpink linkit' href="#"> Link</a></li>
+      <li><a class='bombshellpink linkit' href="#"> Link</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="material-icons pink-text">menu</i></a>
     </div>
@@ -49,12 +50,12 @@
      <div class="container">
        <br><br>
        <h2 class="bombshellSubHeading center pink-text" style="margin-bottom:0px">Hey Dollface</h2>
-       <h1 class="center bombshellHeading white-text" >MAIN HEADLINE</h1>
+       <h1 class="center bombshellHeading white-text" >HAPPY NEW YEAR!</h1>
        <div class="row center">
-         <h5 class="header col s12 light " style="margin-top:0px">A modern and easy to ready font face great for main content.</h5>
+         <h5 class="header col s12 light " style="margin-top:0px"><b>FREE SPRAY TAN WITH A PURCHASE OF A GIFTCARD OVER $25!</b> </h5>
        </div>
        <div class="row center">
-         <a href="#" id="download-button" class="btn-large waves-effect waves-light black lighten-1">Call To Action</a>
+         <a href="#" id="download-button" class="btn-large waves-effect waves-light black lighten-1">BUY A GIFTCARD</a>
        </div>
        <br><br>
 
@@ -64,54 +65,131 @@
  </div>
   <!-- end header --->
 
+
+
+
+
+
+
   <!-- first row of content blocks -->
-  <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:15px;padding-top:0px'>
+  <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:20px;padding-top:0px'>
        <div class="row" style="margin-bottom:15px">
-         <div class="col s12 m12 l4 serviceTile">
-           <div id="servicesBlock" class="col s12 center service_img" >
-            <a class="tileFancy white-text">Services</a>
-           </div>
-         </div>
+
          <div class="col s12 m12 l4 storytile">
            <div id="storyBlock" class="col s12 center" >
              <a class="tileBlock white-text">STORY</a>
            </div>
          </div>
-         <div class="col s12 m12 l4 bookingTile" >
-           <div id="bookingBlock" class="col s12 center">
-               <a class="tileFancy white-text">Booking</a>
+
+         <div id="serviceTile" class="col s12 m12 l4 ">
+           <div id="servicesBlock" class="col s12 center service_img"  >
+            <a class="tileFancy white-text">Services</a>
            </div>
          </div>
+
+         <div class="col s12 m12 l4">
+           <div id="contentblock" class="col s12 center "  >
+            <h3 style="font-family:'alternate-gothic-no-1-d';margin-bottom:0px" class=" white-text">#WEMAKEWAXINGSWEET</h3>
+            <a href="https://twitter.com/ilovebombshell"><i style="margin:5px" class="fa fa-twitter fa-2x pink-text"></i></a>
+            <a href="https://www.instagram.com/ilovebombshell/"><i style="margin:5px" class="fa fa-instagram fa-2x pink-text"></i></a>
+            <a href="https://www.facebook.com/ilovebombshell"><i style="margin:5px" class="fa fa-facebook fa-2x pink-text"></i></a>
+           </div>
+         </div>
+
        </div>
   </div>
   <!-- end first row of content blocks -->
+
+    <!-- first row of content blocks -->
+    <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:20px;padding-top:0px'>
+         <div class="row" style="margin-bottom:15px">
+
+           <div class="col s12 m12 l4 bookingTile" >
+             <div id="bookingBlock" class="col s12 center">
+                 <a class="tileFancy white-text">Booking</a>
+             </div>
+           </div>
+           <div class="col s12 m12 l8 specialsTile" >
+            <div id="specialsBlock" class="col s12 center " >
+            <a class="tileBlock white-text">SPECIALS</a>
+             </div>
+           </div>
+
+         </div>
+    </div>
+    <!-- end first row of content blocks -->
+
 
 
 
   <!-- 3rd row of content blocks -->
   <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:7px;padding-top:0px'>
        <div class="row" style="margin-bottom:15px">
-         <div class="col s12 m12 l8 specialsTile" >
-          <div id="specialsBlock" class="col s12 center " >
-          <a class="tileBlock white-text">SPECIALS</a>
+
+         <div class="col s12 m12 l8">
+           <div id="contentblock2" class="col s12 center "  >
+            <h3 style="font-family:'alternate-gothic-no-1-d';margin-bottom:0px" class=" white-text">WHAT OUR CLIENTS SAY..</h3>
+              <div class="testimonialSlider container" style="padding-top:20px">
+                  <div class="white-text" style="text-align:justify">
+                    <i class="fa fa-quote-left pink-text"></i>
+                    I regularly travel from NC to Richmond to get waxed by the lovely ladies at Bombshell.
+                    The atmosphere is super fun and makes you feel at home and comfortable, and the staff is AWESOME.
+                    Melissa always uses the best waxes and has the perfect products to make your waxing experience as
+                    smooth as possible, plus you seriously cannot beat the prices. <Br><br> - Jessamyn
+                  </div>
+
+                  <div class="white-text" style="text-align:justify">
+                    <i class="fa fa-quote-left pink-text"></i>
+                    Love you and Bombshell, Melissa!
+                    It’s been amazing watching how quickly the business has grown over the past year & a half.
+                    I love coming in and seeing the changes and knowing that I will always be treated like a guest
+                    and not just another “customer” like at other places.
+                    The personalized treatment is what makes you the best in the business.
+                    You Rock! Keep up the fantastic work! “ <Br><br> - Jennifer
+                  </div>
+
+              </div>
            </div>
          </div>
-
          <div class="col s12 m12 l4 giftcardTile" >
-          <div id="giftCardBlock" class="col s12 center giftcard_img" >
-          <a class="tileFancy white-text">Gift Cards</a>
+           <div id="giftCardBlock" class="col s12 center giftcard_img" >
+            <a class="tileFancy white-text">Gift Cards</a>
            </div>
          </div>
        </div>
   </div>
   <!-- end 3rd row of content blocks -->
 
+  <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:20px;padding-top:0px'>
+       <div class="row" style="margin-bottom:15px">
+
+         <div class="col s12 m12 l4 storytile">
+           <div id="blogBlock" class="col s12 center" >
+             <a class="tileBlock white-text">BLOG</a>
+           </div>
+         </div>
+
+         <div id="serviceTile" class="col s12 m12 l4 ">
+           <div id="weddingBlock" class="col s12 center "  >
+            <a class="tileFancy white-text">Weddings</a>
+           </div>
+         </div>
+
+         <div class="col s12 m12 l4 storytile">
+           <div id="partyBlock" class="col s12 center" >
+             <a class="tileBlock white-text">PARTIES</a>
+           </div>
+         </div>
+
+       </div>
+  </div>
+
 
   <!-- 2nd row of content blocks -->
-  <div class="section no-pad-bot mainview testimonials" id="index-banner" style='margin-top:7px;padding-top:0px'>
-       <div class="row" style="margin-bottom:15px" >
+  <div class="section no-pad-bot mainview testimonials" id="index-banner" style='margin-top:7px;padding-top:0px;margin-bottom:0px'>
+       <div class="row" style="margin-bottom:0px" >
          <div class="col s12 m12 l12" style="padding-left:0px;padding-top:7px;padding-right:0px">
-           <div class="col s12 center" style="background-color:pink;height:300px;padding-left:0px;padding-right:0px;padding-top:10%;">
+           <div class="col s12 center" style="background-color:#1f1f1f;height:300px;padding-left:0px;padding-right:0px;padding-top:10%;">
              testimonial slider
            </div>
          </div>
@@ -120,39 +198,10 @@
   <!-- end 2nd row of content blocks -->
 
 
-  <!-- 4th row of content blocks -->
-  <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:7px;padding-top:0px'>
-       <div class="row" style="margin-bottom:15px" >
-         <div class="col s12 m12 l4 partyTile">
-           <div id="partyBlock" class="col s12 center" >
-               <a class="tileBlock white-text">PARTIES</a>
-           </div>
-         </div>
-         <div class="col s12 m12 l4 blogTile" >
-           <div id="blogBlock" class="col s12 center" >
-               <a class="tileFancy white-text">Blog</a>
-           </div>
-         </div>
-         <div class="col s12 m12 l4 weddingTile" >
-           <div id="weddingBlock" class="col s12 center" >
-                  <a class="tileBlock white-text">WEDDINGS</a>
-           </div>
-         </div>
-       </div>
-  </div>
-  <!-- end 4th row of content blocks -->
 
 
-  <!-- footer row -->
-  <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:7px;padding-top:0px'>
-       <div class="row" style="margin-bottom:0px">
-           <div class="col s12 center" style="background-color:#eeeeee;height:100px;padding-left:0px;padding-right:0px">
-            The Footer
-           </div>
 
-       </div>
-  </div>
-  <!-- end footer -->
+
 
 
 
@@ -165,6 +214,23 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   <script src="js/bombshell.js"></script>
+  <script>
+
+    $(document).ready(function(){
+
+      $('.testimonialSlider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+        autoplay:true,
+        autoplaySpeed:2000
+      });
+
+    })
+
+  </script>
   </body>
 </html>

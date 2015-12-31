@@ -1,5 +1,5 @@
 
-.serviceTile {padding-left:7x;padding-top:10px;}
+#serviceTile {padding-left:10px;}
 .storytile {padding-top:10px;padding-left:0px;padding-right:0px;}
 .bookingTile {padding-right:0px;padding-top:10px;}
 .specialsTile {padding-left:0px;padding-top:7px}
@@ -7,6 +7,29 @@
 .partyTile {padding-left:0px;padding-top:7px}
 .blogTile {padding-top:7px}
 .weddingTile {padding-right:0px;padding-top:7px}
+
+.parallax-container {
+      height: 100vh;
+    }
+
+    #contentblock{
+    background-color:#1f1f1f;
+    background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+    }
+    #contentblock2{
+    background-color:#1f1f1f;
+    background-size:cover;height:300px;padding-left:0px;padding-top:2%;
+    }
+
+  .linkit{
+      font-family:'alternate-gothic-no-1-d';
+      font-size:x-large;
+  }
+  .bombshellpink{color:#EC008B;}
+  .bombshellpink:hover{
+    color:black;
+  }
+
 
 #servicesBlock{
 background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-7f8608f5-4a20-4f39-b35e-a1181ceb7c20-Kaitlyn_Bombshell_1.jpg);
@@ -75,7 +98,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   font-family:'kinescope';
   font-weight:400;
   font-style:normal;
-  margin-top:8%;
+  margin-top:10%;
   margin-bottom:0px;
 }
 

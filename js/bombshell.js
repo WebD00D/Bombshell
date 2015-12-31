@@ -16,9 +16,61 @@ $(document).ready(function(){
     $(this).removeClass("z-depth-5");
   })
 
-  $(".storytile").mouseover(function(){
+  $("#weddingBlock").mouseover(function(){
     $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://wowvipevents.com/wp-content/uploads/2015/02/image4.jpg)");
+    $(this).css("background-size","cover")
   })
+  $("#weddingBlock").mouseout(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://wowvipevents.com/wp-content/uploads/2015/02/image4.jpg)");
+    $(this).css("background-size","cover")
+  })
+
+  $("#blogBlock").mouseover(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
+    $(this).css("background-size","cover")
+  })
+  $("#blogBlock").mouseout(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
+    $(this).css("background-size","cover")
+  })
+
+  $("#partyBlock").mouseover(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
+    $(this).css("background-size","cover")
+  })
+  $("#partyBlock").mouseout(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
+    $(this).css("background-size","cover")
+  })
+
+  $("#storyBlock").mouseover(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://2h9fw6visbn2ilapl18sowp1.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/videoshoot10.jpg)");
+    $(this).css("background-size","cover")
+  })
+  $("#storyBlock").mouseout(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://2h9fw6visbn2ilapl18sowp1.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/videoshoot10.jpg)");
+    $(this).css("background-size","cover")
+  })
+
+  $("#bookingBlock").mouseover(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://www.varji.com/assets/images/backgrounds/salon.jpg)");
+    $(this).css("background-size","cover")
+  })
+  $("#bookingBlock").mouseout(function(){
+    $(this).css("cursor","pointer");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.varji.com/assets/images/backgrounds/salon.jpg)");
+    $(this).css("background-size","cover")
+  })
+
   $(".storytile").click(function(){
     window.location.href= "story.html";
   })
