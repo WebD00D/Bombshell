@@ -8,6 +8,10 @@
 .blogTile {padding-top:7px}
 .weddingTile {padding-right:0px;padding-top:7px}
 
+#index-banner{
+  margin-top:20px;
+}
+
 .parallax-container {
       height: 100vh;
     }
@@ -155,8 +159,13 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   .blogTile {margin-top:15px}
   .weddingTile {padding-right:0px;margin-top:15px}
 
+  #contentblock{
+    padding-top:10%;
+    margin-top:17px;
+  }
   #servicesBlock{
   padding-top:10%;
+  margin-top:17px;
   }
   #storyBlock{
     padding-top:10%;
@@ -166,6 +175,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   }
   #specialsBlock{
     padding-top:10%;
+    margin-top:17px;
   }
   #giftCardBlock{
     padding-top:10%;
@@ -178,6 +188,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   }
   #weddingBlock{
     padding-top:10%;
+    margin-top:17px;
   }
 }
 
@@ -213,9 +224,13 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
     padding-top:10px;
 
   }
-
+  #contentblock{
+    margin-top:17px;
+    padding-top:15%;
+  }
   #servicesBlock{
   padding-top:15%;
+  margin-top:17px;
   }
   #storyBlock{
     padding-top:18%;
@@ -225,6 +240,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   }
   #specialsBlock{
     padding-top:15%;
+    margin-top:17px;
   }
   #giftCardBlock{
     padding-top:15%;
@@ -237,13 +253,21 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   }
   #weddingBlock{
     padding-top:15%;
+    margin-top:17px;
   }
 }
 
 @media only screen and (max-width : 600px) {
 
+
+
   #servicesBlock{
   padding-top:25%;
+  margin-top:17px;
+  }
+  #contentblock{
+    margin-top:17px;
+    padding-top:22%;
   }
   #storyBlock{
     padding-top:28%;
@@ -253,6 +277,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   }
   #specialsBlock{
     padding-top:28%;
+    margin-top:17px;
   }
   #giftCardBlock{
     padding-top:25%;
@@ -265,6 +290,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   }
   #weddingBlock{
     padding-top:23%;
+    margin-top:17px;
   }
 
   #logome{height:120px;}
