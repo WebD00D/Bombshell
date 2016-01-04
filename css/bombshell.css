@@ -29,9 +29,13 @@
       font-family:'alternate-gothic-no-1-d';
       font-size:x-large;
   }
-  .bombshellpink{color:#EC008B;}
+  .bombshellpink{color:#e91e63;}
   .bombshellpink:hover{
     color:black;
+  }
+
+  .mypinkHR{
+  height:2px;border:none;margin:0px;
   }
 
 
