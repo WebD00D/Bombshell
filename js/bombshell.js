@@ -7,6 +7,13 @@ $(document).ready(function(){
   $('.parallax').parallax();
   $('select').material_select();
 
+  $(".footerlink").mouseover(function(){
+    $(this).removeClass("pink-text").addClass("white-text");
+  })
+  $(".footerlink").mouseout(function(){
+    $(this).removeClass("white-text").addClass("pink-text");
+  })
+
 
   $(".card").mouseover(function(){
     $(this).css("cursor","pointer");
