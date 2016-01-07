@@ -7,6 +7,7 @@ $(document).ready(function(){
   $('.parallax').parallax();
   $('select').material_select();
 
+
   $(".footerlink").mouseover(function(){
     $(this).removeClass("pink-text").addClass("white-text");
   })

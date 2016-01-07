@@ -67,7 +67,7 @@
    <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:7px;padding-top:0px;'>
      <div class="row" style="margin-bottom:15px;" >
        <div class="col s12 m12 l12" style="padding-left:0px;padding-top:7px;padding-right:0px;">
-         <div class="col s12 left" style="background-color:blue;height:100px;padding-left:0px;padding-right:0px;padding-top:1%;">
+         <div class="col s12 left" style=";height:100px;padding-left:0px;padding-right:0px;padding-top:1%;">
            <div class="col s12 m6 l6 left-align">
              <div class="container"><h3 class="bombshellHeading" style="font-size:80px;margin-top:0px;margin-bottom:0px">Waxing</h3>
              <hr class="pink" style="margin-right:80%;border:none;height:2px;margin-top:0px;margin-bottom:0px">
@@ -79,7 +79,7 @@
 
         <div class="row" style="margin-bottom:15px" >
           <div class="col s12 m12 l12" style="padding-left:0px;padding-top:7px;padding-right:0px">
-            <div class="col s12 left" style="background-color:blue;padding-left:0px;padding-right:0px;padding-top:1%;">
+            <div class="col s12 left" style=";padding-left:0px;padding-right:0px;padding-top:1%;">
 
               <div class="col s12 m6 l6 left-align">
                 <div id="waxcontainer1" class="container">
@@ -578,12 +578,12 @@
      Parse.initialize("6lwXuEam4Zl0heDrMSPQtRx2xcaLM792aRNjw1gF", "hvatZD2xQvA6mmL77SDQsc9T6kqrqLo8PbUmDswC");
 
     var theLocation = url('?location');
+
     setLocationText(theLocation);
     loadServicesbyLocation(theLocation);
 
-
-
     function setLocationText(location){
+
       var Locations = Parse.Object.extend("Locations");
       var query = new Parse.Query(Locations);
       query.get(location, {
