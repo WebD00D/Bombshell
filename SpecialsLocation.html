@@ -75,7 +75,10 @@
 
          </select>
          <Br>
-          <a href="#" id="btnViewServices" class="btn-large waves-effect waves-light black  lighten-1 ">VIEW SERVICES</a>
+          <a href="#" id="btnViewServices" class="btn-large waves-effect waves-light black  lighten-1 ">VIEW SPECIALS</a>
+          <Br>
+          <BR>
+          <h6><b id="lblError"></b></h6>
        </div>
 
      </div>
@@ -176,7 +179,13 @@
 
     $("#btnViewServices").click(function(){
       var locationSelected = $("#dlLocationSelect option:selected").val();
-      window.location.href = "Specials.html?location=" + locationSelected;
+      if (locationSelected === ""){
+        $("#lblError").text("Oops! You need to select a location dollface!")
+      } else {
+        window.location.href = "Specials.html?location=" + locationSelected;
+      }
+
+
     })
 
     var theYear = new Date()

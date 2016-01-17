@@ -15,6 +15,13 @@ $(document).ready(function(){
     $(this).removeClass("white-text").addClass("pink-text");
   })
 
+  $(".social").mouseover(function(){
+    $(this).removeClass("pink-text").addClass("white-text");
+  })
+  $(".social").mouseout(function(){
+    $(this).removeClass("white-text").addClass("pink-text");
+  })
+
 
   $(".card").mouseover(function(){
     $(this).css("cursor","pointer");
@@ -57,6 +64,10 @@ $(document).ready(function(){
     $(this).css("background-size","cover")
   })
 
+  $("#partyBlock").click(function(){
+    window.location.href= "Parties.html";
+  })
+
   $("#storyBlock").mouseover(function(){
     $(this).css("cursor","pointer");
     $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://2h9fw6visbn2ilapl18sowp1.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/videoshoot10.jpg)");
@@ -91,10 +102,10 @@ $(document).ready(function(){
     $(this).css("background-size","cover");
   })
 
-  $(".serviceTile").mouseover(function(){
+  $("#serviceTile").mouseover(function(){
     $(this).css("cursor","pointer");
   })
-  $(".serviceTile").click(function(){
+  $("#serviceTile").click(function(){
     window.location.href= "ServiceLocation.html";
   })
 
@@ -149,10 +160,11 @@ $(document).ready(function(){
     window.location.href= "google.com";
   })
 
+
   $(".weddingTile").mouseover(function(){
     $(this).css("cursor","pointer");
   })
-  $(".weddingTile").click(function(){
+  $("#weddingBlock").click(function(){
     window.location.href= "Weddings.html";
   })
 

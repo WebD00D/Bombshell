@@ -16,6 +16,8 @@
 
 
 
+
+
 .parallax-container {
       height: 100vh;
     }
@@ -106,12 +108,22 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+.headingfont{
+  font-family:'alternate-gothic-no-1-d';
+  font-weight:400;
+  font-style:normal;
+}
 .bombshellSubHeading{
   font-family:'kinescope';
   font-weight:400;
   font-style:normal;
   margin-top:10%;
   margin-bottom:0px;
+}
+
+.serviceHeader{
+  font-size:60px;
 }
 
 .tileleft{
@@ -175,6 +187,12 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   padding-top:10%;
   margin-top:17px;
   }
+
+  #partyBlock{
+    padding-top:10%;
+    margin-top:17px;
+  }
+
   #storyBlock{
     padding-top:10%;
   }
