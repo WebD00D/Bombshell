@@ -14,25 +14,36 @@
     <script src="https://use.typekit.net/mhf2njr.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
       <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
 
     $(window).load(function() { // we use $(window).load because unlike $(document).ready, it isn't triggered until the client has finished loading completely.
 
 
-     $('#mainImage').animate({'opacity':1},5000); // everything is loaded, fade images in
+     $('#mainImage').animate({'opacity':1},2000); // everything is loaded, fade images in
       $(".bombshellSubHeading").animate({'opacity':1},2000);
       $(".bombshellHeading").animate({'opacity':1},2000);
       $("#download-button").animate({'opacity':1},2000);
       $(".linkit").animate({'opacity':1},2000);
       $("#index-banner").removeClass('black');
+      $("#mainheaderText").text("HAPPY NEW YEAR!");
+      $("#subHeaderText").text("Hey Dollface");
+      $("#download-button").text("Buy a Giftcard")
+
 
 
     });
 
-    </script>
+    </script> -->
   </head>
   <body style="background-color:black">
+
+    <div id="preloader">
+      <div class="spinner">
+         <div class="double-bounce1"></div>
+         <div class="double-bounce2"></div>
+      </div>
+    </div>
 
   <!-- header begin -->
   <div id="index-banner" class="parallax-container black" style="margin-top:0px;">
@@ -56,7 +67,9 @@
           <hr class="pink" style="margin:0px;background-color:#e91e63;border:1px solid #e91e63">
         <li><a class="bombshellpink linkit" href="#!" style="color:white">Blog</a></li>
         <hr class="pink" style="margin:0px;background-color:#e91e63;border:1px solid #e91e63">
-        <li><a class="bombshellpink linkit" href="#!" style="color:white"> Tips</a></li>
+        <li><a class="bombshellpink linkit" href="WaxingTips.html" style="color:white"> Waxing Tips</a></li>
+        <hr class="pink" style="margin:0px;background-color:#e91e63;border:1px solid #e91e63">
+        <li><a class="bombshellpink linkit" href="TanningTips.html" style="color:white"> Tanning Tips</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav" style="background-color:#1f1f1f">
@@ -86,13 +99,13 @@
    <div class="section no-pad-bot">
      <div class="container">
        <br><br>
-       <h2 class="bombshellSubHeading center pink-text" style="margin-bottom:0px">Hey Dollface</h2>
-       <h1 class="center bombshellHeading white-text" >HAPPY NEW YEAR!</h1>
+       <h2 id="subHeaderText" class="bombshellSubHeading center pink-text" style="margin-bottom:0px"></h2>
+       <h1 id="mainheaderText" class="center bombshellHeading white-text" ></h1>
        <div class="row center">
          <h5 class="header col s12 light " style="margin-top:0px"><b>FREE SPRAY TAN WITH A PURCHASE OF A GIFTCARD OVER $25!</b> </h5>
        </div>
        <div class="row center">
-         <a href="#" id="download-button" class="btn-large waves-effect waves-light black lighten-1">BUY A GIFTCARD</a>
+         <a href="#" id="download-button" class="btn-large waves-effect waves-light black lighten-1"></a>
        </div>
        <br><br>
 
@@ -112,9 +125,11 @@
   <div class="section no-pad-bot mainview white" id="index-banner" style='margin-top:0px;padding-top:15px'>
        <div class="row" style="margin-bottom:0px;padding-bottom:15px">
 
-         <div class="col s12 m12 l4 ">
-           <div id="storyBlock" class="col s12 center" >
-             <a class="tileBlock white-text">STORY</a>
+
+
+         <div class="col s12 m12 l4 " >
+           <div id="bookingBlock" class="col s12 center">
+               <a class="tileFancy white-text">Booking</a>
            </div>
          </div>
 
@@ -141,11 +156,12 @@
     <div class="section no-pad-bot mainview white" id="index-banner" style='padding-top:0px;margin-top:0px'>
          <div class="row" style="margin-bottom:0px;padding-bottom:15px">
 
-           <div class="col s12 m12 l4 " >
-             <div id="bookingBlock" class="col s12 center">
-                 <a class="tileFancy white-text">Booking</a>
+           <div class="col s12 m12 l4 ">
+             <div id="storyBlock" class="col s12 center" >
+               <a class="tileBlock white-text">STORY</a>
              </div>
            </div>
+
            <div class="col s12 m12 l8 specialsTile" >
             <div id="specialsBlock" class="col s12 center " >
             <a class="tileBlock white-text">SPECIALS</a>
@@ -212,11 +228,13 @@
            </div>
          </div>
 
-         <div class="col s12 m12 l4 storytile">
+         <a href="Parties.html">
+         <div class="col s12 m12 l4 ">
            <div id="partyBlock" class="col s12 center" >
              <a class="tileBlock white-text">PARTIES</a>
            </div>
          </div>
+       </a>
 
        </div>
   </div>
@@ -312,17 +330,31 @@
   <script>
 
 
+  // site preloader -- also uncomment the div in the header and the css style for #preloader
+  $(window).load(function(){
+  $('#preloader').fadeOut('slow',function(){$(this).remove();});
+  $('#mainImage').animate({'opacity':1},2000); // everything is loaded, fade images in
+   $(".bombshellSubHeading").animate({'opacity':1},2000);
+   $(".bombshellHeading").animate({'opacity':1},2000);
+   $("#download-button").animate({'opacity':1},2000);
+   $(".linkit").animate({'opacity':1},2000);
+   $("#index-banner").removeClass('black');
+   $("#mainheaderText").text("HAPPY NEW YEAR!");
+   $("#subHeaderText").text("Hey Dollface");
+   $("#download-button").text("Buy a Giftcard")
+
+
+  });
+
 
 
 
     $(document).ready(function(){
-      $('#mainImage').css('opacity',0); // hide all images
-      $(".bombshellSubHeading").css('opacity',0);
-      $(".bombshellHeading").css('opacity',0);
-      $("#download-button").css('opacity',0);
-      $(".linkit").css('opacity',0);
-
-
+      // $('#mainImage').css('opacity',0); // hide all images
+      // $(".bombshellSubHeading").css('opacity',0);
+      // $(".bombshellHeading").css('opacity',0);
+      // $("#download-button").css('opacity',0);
+      // $(".linkit").css('opacity',0);
 
 
         // $("#index-banner").removeClass("black");
