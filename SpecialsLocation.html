@@ -15,6 +15,13 @@
   </head>
   <body>
 
+    <div id="preloader">
+      <div class="spinner">
+         <div class="double-bounce1"></div>
+         <div class="double-bounce2"></div>
+      </div>
+    </div>
+
   <!-- header begin -->
   <div id="index-banner" class="parallax-container pink lighten-1" style="margin-top:0px">
     <nav style="background-color:#1f1f1f" role="navigation">
@@ -75,7 +82,7 @@
 
          </select>
          <Br>
-          <a href="#" id="btnViewServices" class="btn-large waves-effect waves-light black  lighten-1 ">VIEW SPECIALS</a>
+          <a href="#" id="btnViewServices" class="btn-large waves-effect waves-light black  lighten-1 " style="font-family:'kinescope';text-transform:none;font-size:x-large;text-transform:none" >View Specials</a>
           <Br>
           <BR>
           <h6><b id="lblError"></b></h6>
@@ -153,6 +160,12 @@
   <script src="js/bombshell.js"></script>
 
   <script>
+
+  $(window).load(function(){
+  $('#preloader').fadeOut('slow',function(){$(this).remove();});
+
+  });
+
 
   $(document).ready(function(){
 

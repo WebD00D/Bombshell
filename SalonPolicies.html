@@ -15,6 +15,13 @@
   </head>
   <body>
 
+    <div id="preloader">
+      <div class="spinner">
+         <div class="double-bounce1"></div>
+         <div class="double-bounce2"></div>
+      </div>
+    </div>
+
   <!-- header begin -->
   <div id="index-banner" class="parallax-container" style="height:350px;margin-top:0px">
     <nav style="background-color:#1f1f1f" role="navigation">
@@ -177,5 +184,13 @@
   <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
   <script src="js/bombshell.js"></script>
+  <script>
+
+  $(window).load(function(){
+  $('#preloader').fadeOut('slow',function(){$(this).remove();});
+
+  });
+
+  </script>
   </body>
 </html>

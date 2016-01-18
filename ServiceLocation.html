@@ -14,6 +14,12 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body >
+    <div id="preloader">
+      <div class="spinner">
+         <div class="double-bounce1"></div>
+         <div class="double-bounce2"></div>
+      </div>
+    </div>
 
   <!-- header begin -->
   <div id="index-banner" class="parallax-container pink lighten-1" style="height:100vh;margin-top:0px">
@@ -76,7 +82,7 @@
 
          </select>
          <Br>
-          <a href="#" id="btnViewServices" class="btn-large waves-effect waves-light black  lighten-1 ">VIEW SERVICES</a>
+          <a href="#" id="btnViewServices" class="btn-large waves-effect waves-light black  lighten-1 " style="font-family:'kinescope';text-transform:none;font-size:x-large;text-transform:none" >View Services</a>
        </div>
 
      </div>
@@ -151,6 +157,11 @@
   <script src="js/bombshell.js"></script>
 
   <script>
+
+  $(window).load(function(){
+  $('#preloader').fadeOut('slow',function(){$(this).remove();});
+
+  });
 
   $(document).ready(function(){
 

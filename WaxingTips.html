@@ -15,6 +15,14 @@
   </head>
   <body>
 
+
+        <div id="preloader">
+          <div class="spinner">
+             <div class="double-bounce1"></div>
+             <div class="double-bounce2"></div>
+          </div>
+        </div>
+
     <div id="index-banner" class="parallax-container"  style="margin-top:0px">
       <nav style="background-color:#1f1f1f" role="navigation">
       <div class="nav-wrapper container">
@@ -273,6 +281,11 @@
   <script src="js/bombshell.js"></script>
 
   <script>
+
+  $(window).load(function(){
+  $('#preloader').fadeOut('slow',function(){$(this).remove();});
+
+  });
 
   $(document).ready(function(){
 

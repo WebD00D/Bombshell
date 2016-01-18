@@ -90,6 +90,10 @@ $(document).ready(function(){
     $(this).css("background-size","cover")
   })
 
+  $("#bookingBlock").click(function(){
+    window.location.href= "BookingLocation.html";
+  })
+
   $(".storytile").click(function(){
     window.location.href= "story.html";
   })
@@ -135,7 +139,7 @@ $(document).ready(function(){
     $(this).css("cursor","pointer");
   })
   $(".giftcardTile").click(function(){
-    window.location.href= "google.com";
+  window.location.href= "GiftCardLocation.html";
   })
   $(".giftcard_img").mouseover(function(){
     $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-76ac575e-b948-4c05-9499-b1e0daf6d9bc-Bombshell_GiftCards.jpg)");
@@ -145,6 +149,8 @@ $(document).ready(function(){
     $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-76ac575e-b948-4c05-9499-b1e0daf6d9bc-Bombshell_GiftCards.jpg)");
     $(this).css("background-size","cover");
   })
+
+
 
   $(".partyTile").mouseover(function(){
     $(this).css("cursor","pointer");
