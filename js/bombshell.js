@@ -53,6 +53,10 @@ $(document).ready(function(){
     $(this).css("background-size","cover")
   })
 
+  $("#blogBlock").click(function(){
+    window.location.href = "https://ilovebombshellblog.wordpress.com/";
+  })
+
   $("#partyBlock").mouseover(function(){
     $(this).css("cursor","pointer");
     $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
