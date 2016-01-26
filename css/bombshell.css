@@ -13,11 +13,6 @@
 }
 
 
-
-
-
-
-
 .parallax-container {
       height: 100vh;
     }
@@ -70,7 +65,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 }
 
 #partyBlock{
-background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg);
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/db2d56ca-fb33-4f71-ab70-5c5f9f6c85b0/tfss-fd803e00-cd81-47cb-8277-b9766b4b3cfe-DrShaw.jpg);
 background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 }
 
@@ -82,6 +77,21 @@ background-size:cover;height:300px;padding-left:0px;padding-top:23%;
 #weddingBlock{
 background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://wowvipevents.com/wp-content/uploads/2015/02/image4.jpg);
 background-size:cover;height:300px;padding-left:0px;padding-top:25%;
+}
+
+#weddingBlock .tileFancy{
+  font-family:'kinescope';
+  font-weight:400;
+  font-style:normal;
+  font-size:35px;
+  color:black;
+  border:1px solid white;
+  border-left:none;
+  border-right:none;
+  padding-left:15px;
+  padding-right:15px;
+  padding-bottom:10px;
+  padding-top:10px;
 }
 
 /* label color */

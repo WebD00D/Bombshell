@@ -59,17 +59,17 @@ $(document).ready(function(){
 
   $("#partyBlock").mouseover(function(){
     $(this).css("cursor","pointer");
-    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://files.parsetfss.com/db2d56ca-fb33-4f71-ab70-5c5f9f6c85b0/tfss-fd803e00-cd81-47cb-8277-b9766b4b3cfe-DrShaw.jpg)");
     $(this).css("background-size","cover")
   })
   $("#partyBlock").mouseout(function(){
     $(this).css("cursor","pointer");
-    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/db2d56ca-fb33-4f71-ab70-5c5f9f6c85b0/tfss-fd803e00-cd81-47cb-8277-b9766b4b3cfe-DrShaw.jpg)");
     $(this).css("background-size","cover")
   })
 
   $("#partyBlock").click(function(){
-    window.location.href= "Parties.html";
+    window.location.href= "DRShaw.html";
   })
 
   $("#storyBlock").mouseover(function(){
