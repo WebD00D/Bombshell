@@ -10,9 +10,41 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bombshell.css">
-    <!-- Adobe Type Kit -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://use.typekit.net/mhf2njr.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-27610934-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+    (function(a,e,c,f,g,b,d){var h={ak:"982226946",cl:"SZyPCPeDzVsQgrCu1AM"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[f]||(a[f]=h.ak);b=e.createElement(g);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(g)[0];d.parentNode.insertBefore(b,d);a._googWcmGet=function(b,d,e){a[c](2,b,h,d,null,new Date,e)}})(window,document,"_googWcmImpl","_googWcmAk","script");
+  </script>
+
+  <script>
+   var callback = function(formatted_number, unformatted_number) {
+
+   var numberLinks = document.getElementsByClassName('number_link');
+
+   for (var i in numberLinks) {
+   // Change clkn to clkg if you are tracking your links as Unbounce conversion goals
+   numberLinks[i].href = "clkn/tel/" + unformatted_number;
+   numberLinks[i].innerHTML = "";
+   numberLinks[i].appendChild(document.createTextNode(formatted_number));
+   }
+   };
+  </script>
+
+  <script>
+    jQuery(function($) {
+    _googWcmGet(callback, '804-342-0051')
+    });
+  </script>
   </head>
   <body>
 
@@ -23,21 +55,23 @@
       </div>
     </div>
 
-    <div id="index-banner" class="parallax-container" style="margin-top:0px" >
+    <div id="index-banner" class="parallax-container" style="margin-top:0px;height:350px" >
       <nav style="background-color:#1f1f1f" role="navigation">
       <div class="nav-wrapper container">
+
         <a id="logo-container" href="index.html" class="brand-logo" style="padding-top:15px" ><img id="logome" src="http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-0ed7deb8-14c3-4540-bc9a-2312f00a1e3a-bombshellupdateed.jpg"></a>
         <ul class="right hide-on-med-and-down ">
           <li><a class='pink-text linkit footerlink' href="ServiceLocation.html" >  Services</a></li>
           <li><a class='pink-text linkit footerlink' href="BookingLocation.html"> Booking</a></li>
-          <li><a class='pink-text linkit footerlink' href="story.html"> Story & Culture</a></li>
           <li><a class='pink-text linkit footerlink' href="SpecialsLocation.html"> Specials</a></li>
           <li><a class='pink-text dropdown-button linkit footerlink' data-beloworigin="true" data-constrainwidth="false" data-hover='true' href="#" data-activates='dropdown1'> Extras</a></li>
-
+          <li><a class='pink-text linkit footerlink' href="tel:8043420051"><span class="number_link">804-342-0051</span></a></li>
         </ul>
 
         <!-- Dropdown Structure -->
         <ul id='dropdown1' class='dropdown-content bombshellpink' style="background-color:#1f1f1f" >
+          <li><a class="bombshellpink linkit" href="story.html" style="color:white;font-size:20px">Story & Culture</a></li>
+            <hr class="pink" style="margin:0px;background-color:#e91e63;border:1px solid #e91e63">
           <li><a class="bombshellpink linkit" href="Weddings.html" style="color:white;font-size:20px">Weddings</a></li>
             <hr class="pink" style="margin:0px;background-color:#e91e63;border:1px solid #e91e63">
           <li><a class="bombshellpink linkit" href="GiftCardLocation.html" style="color:white;font-size:20px">Gift Cards</a></li>
@@ -64,8 +98,11 @@
           <li><a class='bombshellpink linkit ' href="SpecialsLocation.html" style="color:white;font-size:x-large"> Specials</a></li>
             <hr class="pink mypinkHR" >
           <li><a class="bombshellpink linkit " href="GiftCardLocation.html" style="color:white;font-size:x-large">Gift Cards</a></li>
+          <hr class="pink mypinkHR" >
+        <li><a class="bombshellpink linkit " href="Contact.html" style="color:white;font-size:x-large">Get In Touch</a></li>
+
             <hr class="pink mypinkHR" >
-          <li><a class="bombshellpink linkit " href="Contact.html" style="color:white;font-size:x-large"> Contact</a></li>
+          <li><a class="bombshellpink linkit " href="tel:8043420051" style="color:white;font-size:x-large"><span class="number_link">804-342-0051</span></a></li>
 
 
 
@@ -76,15 +113,9 @@
      <div class="section no-pad-bot">
        <div class="container">
          <br><br>
-         <h2 class="bombshellSubHeading center pink-text" style="margin-bottom:0px">Let's</h2>
+         <h2 id="connectHeading" class="bombshellSubHeading center pink-text" style="margin-bottom:0px;">Let's</h2>
          <h1 class="center bombshellHeading white-text" style="margin-top:0px;margin-bottom:0px">CONNECT</h1>
-         <div class="row center">
-           <h5 class="header col s12 light " style="margin-top:0px">Fill out the form below, or give us a call!</h5>
-         </div>
-         <div class="row center">
-           <a href="#" id="download-button" class="btn-large waves-effect waves-light black lighten-1">(804) 555-5555</a>
-         </div>
-         <br><br>
+
 
        </div>
      </div>
@@ -94,6 +125,55 @@
 
    <!-- SERVICE SPECIALS -->
    <div class="section no-pad-bot mainview" id="index-banner" style='margin-top:7px;padding-top:0px'>
+
+     <div class="row" style="margin-top:25px">
+       <div class="col l12">
+         <div class="container">
+           <div class="col l3 s6" style="margin-top:7px">
+               <h2 class="bombshellHeading" style="font-size:25px;margin-bottom:0px">CARYTOWN</h2>
+               <p class="bombshellHeading" style="font-size:17px">
+                 10 South Crenshaw Ave.<Br>
+                 Richmond, VA 23221
+                 <Br>
+                 <a href="https://www.google.com/maps/place/10+S+Crenshaw+Ave,+Richmond,+VA+23221/@37.5554098,-77.4871227,17z/data=!3m1!4b1!4m2!3m1!1s0x89b113f1b69a0df5:0x6e37a39962dcd72" class="pink-text">Get Directions</a>
+               </p>
+
+           </div>
+           <div class="col l3 s6"  style="margin-top:7px">
+               <h2 class="bombshellHeading" style="font-size:25px;margin-bottom:0px">SHORT PUMP</h2>
+               <p class="bombshellHeading" style="font-size:17px">
+                 2243 Old Brick Road<Br>
+                 Glen Allen, VA 23060
+                 <Br>
+                 <a href="https://www.google.com/maps/place/2243+Old+Brick+Rd,+Glen+Allen,+VA+23060/@37.6474788,-77.6036828,17z/data=!3m1!4b1!4m2!3m1!1s0x89b16a8ed7b1904f:0xaa1ce4008330dee0" class="pink-text">Get Directions</a>
+               </p>
+
+           </div>
+           <div class="col l3 s6"  style="margin-top:7px">
+               <h2 class="bombshellHeading" style="font-size:25px;margin-bottom:0px">SOUTH SIDE</h2>
+               <p class="bombshellHeading" style="font-size:17px">
+                 4821 Commonwealth Centre Parkway<Br>
+                  Midlothian, VA 23112
+                 <Br>
+                 <a href="https://www.google.com/maps/place/4821+Commonwealth+Centre+Pkwy,+Midlothian,+VA+23112/@37.4211806,-77.633277,17z/data=!3m1!4b1!4m2!3m1!1s0x89b173f2b60c545b:0xca4c6043a5e336ca" class="pink-text">Get Directions</a>
+               </p>
+
+           </div>
+           <div class="col l3 s6"  style="margin-top:7px">
+               <h2 class="bombshellHeading" style="font-size:25px;margin-bottom:0px">LAS VEGAS</h2>
+               <p class="bombshellHeading" style="font-size:17px">
+                150 Las Vegas Blvd N.<Br>
+                Las Vegas, NV 89101
+
+                 <Br>
+                 <a href="https://www.google.com/maps/place/150+N+Las+Vegas+Blvd,+Las+Vegas,+NV+89101/@36.1700987,-115.1416701,16.62z/data=!4m2!3m1!1s0x80c8c3753e43834d:0x40d245bc35222e26" class="pink-text">Get Directions</a>
+               </p>
+
+           </div>
+
+         </div>
+       </div>
+     </div>
 
 
         <div class="row" style="margin-bottom:15px;margin-top:25px" >
@@ -105,8 +185,11 @@
                 <div class="container">
 
 
+
+
                   <div class="col s12">
                     <div class="row">
+                      <h2 class="bombshellHeading" style="font-size:35px;margin-bottom:0px;margin-left:1%">SEND A MESSAGE</h2>
                       <div class="input-field col s12 l6 m6">
                         <input placeholder="Marilyn" id="first_name" type="text" >
                         <label for="first_name">First Name</label>
@@ -131,7 +214,8 @@
                         <input placeholder="I'm looking for more information about.." id="message" type="text" >
                         <label for="message">Message</label>
                       </div>
-                      <a href="#" id="btnSendMessage" class="btn-large waves-effect waves-light pink lighten-1 right">Submit</a>
+                      <a href="#" id="btnSendMessage" class="btn-large waves-effect waves-light pink bombshellSubHeading right" style="text-transform:none;font-size:x-large;margin-top:15px">Submit</a>
+
 
                     </div>
 
@@ -148,6 +232,8 @@
             </div>
           </div>
         </div>
+
+
 
    </div>  <!-- END SERVICE SPECIALS -->
 
@@ -167,23 +253,24 @@
                 </div>
                 <div class="col l3">
                   <ul>
-                    <li><a class="pink-text linkit footerlink" href="Parties.html">Parties</a></li>
-                    <li><a class="pink-text linkit footerlink" href="Weddings.html">Weddings</a></li>
-                     <li><a class="pink-text linkit footerlink"  href="#">Blog</a></li>
+                    <li><a class="pink-text linkit footerlink" href="DRShaw.html">Dr. Travis Shaw</a></li>
+                    <li><a class="pink-text linkit footerlink" href="Weddings.html">Weddings & Parties</a></li>
+                     <li><a class="pink-text linkit footerlink"  href="https://ilovebombshellblog.wordpress.com/">Blog</a></li>
                   </ul>
                 </div>
                 <div class="col l3">
                   <ul>
-                    <li><a class="pink-text linkit footerlink" href="#">Careers</a></li>
+                    <li><a class="pink-text linkit footerlink" href="Careers.html">Careers</a></li>
                      <li><a class="pink-text linkit footerlink"  href="Contact.html">Contact Us</a></li>
-                      <li><a class="pink-text linkit footerlink" href="#">Salon Policies</a></li>
+                      <li><a class="pink-text linkit footerlink" href="SalonPolicies.html">Salon Policies</a></li>
                   </ul>
                 </div>
                 <div class="col l3">
-                  <h3 style="font-family:'alternate-gothic-no-1-d';margin-bottom:0px" class=" white-text">#WEMAKEWAXINGSWEET</h3>
-                  <a href="https://twitter.com/ilovebombshell"><i style="margin:5px" class="fa fa-twitter fa-2x pink-text"></i></a>
-                  <a href="https://www.instagram.com/ilovebombshell/"><i style="margin:5px" class="fa fa-instagram fa-2x pink-text"></i></a>
-                  <a href="https://www.facebook.com/ilovebombshell"><i style="margin:5px" class="fa fa-facebook fa-2x pink-text"></i></a>
+                  <h3 style="font-family:'alternate-gothic-no-1-d';margin-bottom:0px" class=" white-text">#MAKESWAXINGSWEET</h3>
+                  <a href="https://twitter.com/ilovebombshell"><i style="margin:5px" class="fa fa-twitter fa-2x pink-text social"></i></a>
+                  <a href="https://www.instagram.com/ilovebombshell/"><i style="margin:5px" class="fa fa-instagram fa-2x pink-text social"></i></a>
+                  <a href="https://www.facebook.com/ilovebombshell"><i style="margin:5px" class="fa fa-facebook fa-2x pink-text social"></i></a>
+                  <a href="https://www.snapchat.com/add/bombshellvegas"><i style="margin:5px" class="fa fa-snapchat fa-2x pink-text social"></i></a>
                 </div>
                 <div class="col l12 center">
                   <h6 style="font-family:'alternate-gothic-no-1-d';margin-bottom:0px" class=" grey-text text-darken-3">&copy <span id="theYear"></span> Bombshell Salon Debute, LLC. All Rights Reserved.</h6>
@@ -203,7 +290,7 @@
 
 
   <!-- All da' JavaScriptzz -->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
   <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
   <script src=https://cdnjs.cloudflare.com/ajax/libs/js-url/2.0.2/url.js></script>

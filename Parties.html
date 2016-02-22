@@ -10,9 +10,41 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bombshell.css">
-    <!-- Adobe Type Kit -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://use.typekit.net/mhf2njr.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-27610934-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+    (function(a,e,c,f,g,b,d){var h={ak:"982226946",cl:"SZyPCPeDzVsQgrCu1AM"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[f]||(a[f]=h.ak);b=e.createElement(g);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(g)[0];d.parentNode.insertBefore(b,d);a._googWcmGet=function(b,d,e){a[c](2,b,h,d,null,new Date,e)}})(window,document,"_googWcmImpl","_googWcmAk","script");
+  </script>
+
+  <script>
+   var callback = function(formatted_number, unformatted_number) {
+
+   var numberLinks = document.getElementsByClassName('number_link');
+
+   for (var i in numberLinks) {
+   // Change clkn to clkg if you are tracking your links as Unbounce conversion goals
+   numberLinks[i].href = "clkn/tel/" + unformatted_number;
+   numberLinks[i].innerHTML = "";
+   numberLinks[i].appendChild(document.createTextNode(formatted_number));
+   }
+   };
+  </script>
+
+  <script>
+    jQuery(function($) {
+    _googWcmGet(callback, '804-342-0051')
+    });
+  </script>
   </head>
   <body>
 
@@ -208,7 +240,7 @@
 
 
   <!-- All da' JavaScriptzz -->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
   <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
   <script src=https://cdnjs.cloudflare.com/ajax/libs/js-url/2.0.2/url.js></script>

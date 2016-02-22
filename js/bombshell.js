@@ -33,27 +33,25 @@ $(document).ready(function(){
 
   $("#weddingBlock").mouseover(function(){
     $(this).css("cursor","pointer");
-    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://wowvipevents.com/wp-content/uploads/2015/02/image4.jpg)");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(images/Bombshell_Salon_2015-479.jpg)");
     $(this).css("background-size","cover")
   })
   $("#weddingBlock").mouseout(function(){
     $(this).css("cursor","pointer");
-    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://wowvipevents.com/wp-content/uploads/2015/02/image4.jpg)");
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(images/Bombshell_Salon_2015-479.jpg)");
     $(this).css("background-size","cover")
   })
 
-  $("#blogBlock").mouseover(function(){
+  $("#contentblock3").mouseover(function(){
     $(this).css("cursor","pointer");
-    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
-    $(this).css("background-size","cover")
+
   })
-  $("#blogBlock").mouseout(function(){
+  $("#contentblock3").mouseout(function(){
     $(this).css("cursor","pointer");
-    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://www.weddingsalon.com/blog/wp-content/uploads/2012/03/112.jpg)");
-    $(this).css("background-size","cover")
+
   })
 
-  $("#blogBlock").click(function(){
+  $("#contentblock3").click(function(){
     window.location.href = "https://ilovebombshellblog.wordpress.com/";
   })
 
@@ -98,7 +96,7 @@ $(document).ready(function(){
     window.location.href= "BookingLocation.html";
   })
 
-  $(".storytile").click(function(){
+  $("#storyBlock").click(function(){
     window.location.href= "story.html";
   })
   $(".service_img").mouseover(function(){

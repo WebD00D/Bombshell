@@ -8,33 +8,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" href="css/bombshell.css">
     <!-- Adobe Type Kit -->
     <script src="https://use.typekit.net/mhf2njr.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <!-- <script type="text/javascript">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-27610934-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+    (function(a,e,c,f,g,b,d){var h={ak:"982226946",cl:"SZyPCPeDzVsQgrCu1AM"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[f]||(a[f]=h.ak);b=e.createElement(g);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(g)[0];d.parentNode.insertBefore(b,d);a._googWcmGet=function(b,d,e){a[c](2,b,h,d,null,new Date,e)}})(window,document,"_googWcmImpl","_googWcmAk","script");
+  </script>
 
-    $(window).load(function() { // we use $(window).load because unlike $(document).ready, it isn't triggered until the client has finished loading completely.
+  <script>
+   var callback = function(formatted_number, unformatted_number) {
 
+   var numberLinks = document.getElementsByClassName('number_link');
 
-     $('#mainImage').animate({'opacity':1},2000); // everything is loaded, fade images in
-      $(".bombshellSubHeading").animate({'opacity':1},2000);
-      $(".bombshellHeading").animate({'opacity':1},2000);
-      $("#download-button").animate({'opacity':1},2000);
-      $(".linkit").animate({'opacity':1},2000);
-      $("#index-banner").removeClass('black');
-      $("#mainheaderText").text("HAPPY NEW YEAR!");
-      $("#subHeaderText").text("Hey Dollface");
-      $("#download-button").text("Buy a Giftcard")
+   for (var i in numberLinks) {
+   // Change clkn to clkg if you are tracking your links as Unbounce conversion goals
+   numberLinks[i].href = "clkn/tel/" + unformatted_number;
+   numberLinks[i].innerHTML = "";
+   numberLinks[i].appendChild(document.createTextNode(formatted_number));
+   }
+   };
+  </script>
 
-
-
+  <script>
+    jQuery(function($) {
+    _googWcmGet(callback, '804-342-0051')
     });
+  </script>
 
-    </script> -->
   </head>
   <body style="background-color:black">
 
@@ -54,14 +67,15 @@
       <ul class="right hide-on-med-and-down ">
         <li><a class='pink-text linkit footerlink' href="ServiceLocation.html" >  Services</a></li>
         <li><a class='pink-text linkit footerlink' href="BookingLocation.html"> Booking</a></li>
-        <li><a class='pink-text linkit footerlink' href="story.html"> Story & Culture</a></li>
         <li><a class='pink-text linkit footerlink' href="SpecialsLocation.html"> Specials</a></li>
         <li><a class='pink-text dropdown-button linkit footerlink' data-beloworigin="true" data-constrainwidth="false" data-hover='true' href="#" data-activates='dropdown1'> Extras</a></li>
-
+        <li><a class='pink-text linkit footerlink' href="tel:8043420051"><span class="number_link">804-342-0051</span></a></li>
       </ul>
 
       <!-- Dropdown Structure -->
       <ul id='dropdown1' class='dropdown-content bombshellpink' style="background-color:#1f1f1f" >
+        <li><a class="bombshellpink linkit" href="story.html" style="color:white;font-size:20px">Story & Culture</a></li>
+          <hr class="pink" style="margin:0px;background-color:#e91e63;border:1px solid #e91e63">
         <li><a class="bombshellpink linkit" href="Weddings.html" style="color:white;font-size:20px">Weddings</a></li>
           <hr class="pink" style="margin:0px;background-color:#e91e63;border:1px solid #e91e63">
         <li><a class="bombshellpink linkit" href="GiftCardLocation.html" style="color:white;font-size:20px">Gift Cards</a></li>
@@ -88,8 +102,11 @@
         <li><a class='bombshellpink linkit ' href="SpecialsLocation.html" style="color:white;font-size:x-large"> Specials</a></li>
           <hr class="pink mypinkHR" >
         <li><a class="bombshellpink linkit " href="GiftCardLocation.html" style="color:white;font-size:x-large">Gift Cards</a></li>
+        <hr class="pink mypinkHR" >
+      <li><a class="bombshellpink linkit " href="Contact.html" style="color:white;font-size:x-large">Get In Touch</a></li>
+
           <hr class="pink mypinkHR" >
-        <li><a class="bombshellpink linkit " href="Contact.html" style="color:white;font-size:x-large"> Contact</a></li>
+        <li><a class="bombshellpink linkit " href="tel:8043420051" style="color:white;font-size:x-large"><span class="number_link">804-342-0051</span></a></li>
 
 
 
@@ -99,20 +116,31 @@
   </nav>
    <div class="section no-pad-bot">
      <div class="container">
+
+       <div class="row">
+
+      <div class='col s12 homeHeaderBanner' style='text-align:center'>
+         <h1 id="mainHeadline" class="center bombshellHeading white-text">BUY 3, GET ONE FREE!</h1>
+         <h4 id="secondaryHeadline" style='margin-top:0px' class="center headingfont white-text">Try an Award Winning Bombshell Customized Spray Tan for your island get away!</h4>
+         <a href="ServiceLocation.html" class="btn btn-large waves-effect waves-light  pink" style="font-family:'kinescope';text-transform:none;font-size:x-large"><i class="material-icons right">keyboard_arrow_right</i> See all Specials<a>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
        <br><br>
-       <h2 id="subHeaderText" class="bombshellSubHeading center pink-text" style="margin-bottom:0px"></h2>
-       <h1 id="mainheaderText" class="center bombshellHeading white-text" ></h1>
-       <div class="row center">
-         <h5 class="header col s12 light " style="margin-top:0px"><b>FREE SPRAY TAN WITH A PURCHASE OF A GIFTCARD OVER $25!</b> </h5>
-       </div>
-       <div class="row center">
-         <a href="GiftCardLocation.html" id="download-button" style="font-family:'kinescope';text-transform:none;font-size:x-large" class="btn-large waves-effect waves-light black lighten-1"></a>
-       </div>
-       <br><br>
+
+
+
 
      </div>
    </div>
-   <div class="parallax"><img id="mainImage" src="http://files.parsetfss.com/db2d56ca-fb33-4f71-ab70-5c5f9f6c85b0/tfss-15cfffc6-d740-4441-99bb-928755031f50-BombshellCover.jpg" alt="Unsplashed background img 1"></div>
+   <div class="parallax"><img id="mainImage" src="images/Couple.jpg" alt="Unsplashed background img 1"></div>
  </div>
   <!-- end header --->
 
@@ -146,6 +174,7 @@
             <a href="https://twitter.com/ilovebombshell"><i style="margin:5px" class="fa fa-twitter social fa-2x pink-text"></i></a>
             <a href="https://www.instagram.com/ilovebombshell/"><i style="margin:5px" class="fa fa-instagram social fa-2x pink-text"></i></a>
             <a href="https://www.facebook.com/ilovebombshell"><i style="margin:5px" class="fa fa-facebook fa-2x social pink-text"></i></a>
+               <a href="https://www.snapchat.com/add/bombshellvegas"><i style="margin:5px" class="fa fa-snapchat fa-2x pink-text social"></i></a>
            </div>
          </div>
 
@@ -220,7 +249,7 @@
 
          <div class="col s12 m12 l4 ">
 
-           <div id="blogBlock" class="col s12 center" >
+           <div id="contentblock3" class="col s12 center" >
              <a  class="tileBlock white-text">BLOG</a>
            </div>
 
@@ -258,7 +287,7 @@
 
         </div>
         <div class="col l4 s12 center" style="padding-top:40px">
-          <a href="#" class="btn waves-effect waves-light  pink" style="font-family:'kinescope';text-transform:none;font-size:x-large"><i class="material-icons right">keyboard_arrow_right</i> Subscribe<a>
+          <a id="btnGetNewsletter" href="#" class="btn waves-effect waves-light  pink" style="font-family:'kinescope';text-transform:none;font-size:x-large"><i class="material-icons right">keyboard_arrow_right</i> Subscribe<a>
         </div>
       </div>
 
@@ -300,6 +329,7 @@
                  <a href="https://twitter.com/ilovebombshell"><i style="margin:5px" class="fa fa-twitter fa-2x pink-text social"></i></a>
                  <a href="https://www.instagram.com/ilovebombshell/"><i style="margin:5px" class="fa fa-instagram fa-2x pink-text social"></i></a>
                  <a href="https://www.facebook.com/ilovebombshell"><i style="margin:5px" class="fa fa-facebook fa-2x pink-text social"></i></a>
+                 <a href="https://www.snapchat.com/add/bombshellvegas"><i style="margin:5px" class="fa fa-snapchat fa-2x pink-text social"></i></a>
                </div>
                <div class="col l12 center">
                  <h6 style="font-family:'alternate-gothic-no-1-d';margin-bottom:0px" class=" grey-text text-darken-3">&copy <span id="theYear"></span> Bombshell Salon Debute, LLC. All Rights Reserved.</h6>
@@ -318,6 +348,7 @@
   <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
   <script src="js/bombshell.js"></script>
   <script>
 
@@ -329,9 +360,8 @@
    $("#download-button").animate({'opacity':1},2000);
    $(".linkit").animate({'opacity':1},2000);
    $("#index-banner").removeClass('black');
-   $("#mainheaderText").text("HAPPY NEW YEAR!");
-   $("#subHeaderText").text("Hey Dollface");
-   $("#download-button").text("Buy a Giftcard");
+
+   $("#download-button").text("Sign Me Up!");
 
 
   });
@@ -348,6 +378,48 @@
 
 
         // $("#index-banner").removeClass("black");
+
+
+
+
+            $("#btnGetNewsletter").click(function(e){
+              e.preventDefault();
+
+              var email = $("#txtEmailAddress").val();
+
+              if ($.trim(email) === ""){
+                return;
+              }
+
+
+
+
+              var message = 'Please subscribe the following email to the Bombshell Newsletter: ' + email;
+              var subject = 'Bombshell Newsletter Subscription';
+
+              // Send Email
+             var textToSend = "Bombshell Newsletter Subscription\n" +
+             "Message: "+ message ;
+
+             Parse.Cloud.run('sendMail', { msg: textToSend,sub: subject}, {
+               success: function(result) {
+                     //swal({   title: "Message Sent!",   text: "We'll be in touch with you soon!" ,   type: "success", confirmButtonText:"Okay",confirmButtonColor: "#34495e"});
+                     swal({
+                       title: "Thanks Dollface!",
+                       text: "You've successfull subscribed to the Bombshell Newsletter!",
+                      type: "success",
+                      confirmButtonColor:"#e91e63",
+                      confirmButtonText:"Cool",
+                       showConfirmButton: true });
+               },
+               error: function(error) {
+                 console.log(error);
+                 //swal({   title: "Failed to Send!",   text: "Hmm something's not right." ,   type: "error",   confirmButtonText: "OK",confirmButtonColor: "#34495e" });
+               }
+             });
+
+
+            })
 
       $('.testimonialSlider').slick({
         infinite: true,
