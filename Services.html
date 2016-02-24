@@ -487,6 +487,7 @@
       var query = new Parse.Query(ServicesOffered);
       query.include('ServiceID');
       query.equalTo('Location',location);
+      query.limit(500);
       query.find({
         success: function(results) {
 
