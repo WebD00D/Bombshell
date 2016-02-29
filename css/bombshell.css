@@ -13,6 +13,10 @@
 
 }
 
+.serviceHeaderContainer{
+  margin-left:7.5%;
+}
+
 #mainheaderText{
   margin-top:15%;
   text-shadow:2px 2px rgba(01,01,01,0.5);
@@ -187,6 +191,10 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 
 @media only screen and (max-width : 1000px) {
 
+  .serviceHeaderContainer{
+    margin-left:3.5%;
+  }
+
   #logome{height:120px;}
   .bombshellHeading{font-size: 80px;}
   .bombshellSubHeading{font-size: 40px;margin-top:15%;margin-bottom:0px;}
@@ -240,7 +248,17 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 }
 
 
+@media only screen and (max-width:768){
+  .serviceHeaderContainer{
+    margin-left:4%;
+  }
+}
+
 @media only screen and (max-width:800px){
+
+  .serviceHeaderContainer{
+    margin-left:4.5%;
+  }
 
   .tileFancy{
     font-family:'kinescope';
