@@ -52,6 +52,8 @@
   }
 
 
+
+
 #servicesBlock{
 background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-7f8608f5-4a20-4f39-b35e-a1181ceb7c20-Kaitlyn_Bombshell_1.jpg);
 background-size:cover;height:300px;padding-left:0px;padding-top:25%;
@@ -367,6 +369,11 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 }
 
 @media only screen and (max-width : 600px) {
+
+  .menuItems{
+    font-size:24px;
+    height:40px;
+  }
 
   #tanningTips{
     margin-top:15%
