@@ -72,13 +72,15 @@ $(document).ready(function(){
 
   $("#storyBlock").mouseover(function(){
     $(this).css("cursor","pointer");
-    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://2h9fw6visbn2ilapl18sowp1.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/videoshoot10.jpg)");
-    $(this).css("background-size","cover")
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.1),rgba(01,01,01,0.1)),url(http://files.parsetfss.com/db2d56ca-fb33-4f71-ab70-5c5f9f6c85b0/tfss-d3d9ce5b-af5c-48e6-8b8d-4dc08e632ec2-BombshellMama.jpg)");
+    $(this).css("background-size","cover");
+    $(this).css("background-position","center center");
   })
   $("#storyBlock").mouseout(function(){
     $(this).css("cursor","pointer");
-    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://2h9fw6visbn2ilapl18sowp1.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/videoshoot10.jpg)");
-    $(this).css("background-size","cover")
+    $(this).css("background","linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/db2d56ca-fb33-4f71-ab70-5c5f9f6c85b0/tfss-d3d9ce5b-af5c-48e6-8b8d-4dc08e632ec2-BombshellMama.jpg)");
+    $(this).css("background-size","cover");
+    $(this).css("background-position","center center");
   })
 
   $("#bookingBlock").mouseover(function(){

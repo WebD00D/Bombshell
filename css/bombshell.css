@@ -59,8 +59,9 @@ background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://fil
 background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 }
 #storyBlock{
-background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://2h9fw6visbn2ilapl18sowp1.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/videoshoot10.jpg);
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url(http://files.parsetfss.com/db2d56ca-fb33-4f71-ab70-5c5f9f6c85b0/tfss-d3d9ce5b-af5c-48e6-8b8d-4dc08e632ec2-BombshellMama.jpg);
 background-size:cover;height:300px;padding-left:0px;padding-top:28%;
+background-position: center center;
 }
 
 #bookingBlock{
