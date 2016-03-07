@@ -89,7 +89,7 @@ background-size:cover;height:300px;padding-left:0px;padding-top:23%;
 }
 
 #weddingBlock{
-background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url('/Bombshell/images/Bombshell_Salon_2015-479.jpg');
+background:linear-gradient(rgba(01,01,01,0.5),rgba(01,01,01,0.5)),url('/images/Bombshell_Salon_2015-479.jpg');
 background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 }
 
@@ -189,6 +189,47 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
   padding-bottom:0px;
   padding-top:10px;
 
+}
+
+
+@media only screen and (max-width:1600px){
+  #contentblock{
+    padding-top:10%;
+    margin-top:17px;
+  }
+  #servicesBlock{
+  padding-top:10%;
+  margin-top:17px;
+  }
+
+  #partyBlock{
+    padding-top:10%;
+    margin-top:17px;
+  }
+
+  #storyBlock{
+    padding-top:10%;
+  }
+  #bookingBlock{
+    padding-top:3%;
+  }
+  #specialsBlock{
+    padding-top:10%;
+    margin-top:17px;
+  }
+  #giftCardBlock{
+    padding-top:10%;
+  }
+  #partyBlock{
+    padding-top:10%;
+  }
+  #blogBlock{
+    padding-top:10%;
+  }
+  #weddingBlock{
+    padding-top:10%;
+    margin-top:17px;
+  }
 }
 
 @media only screen and (max-width : 1000px) {
@@ -530,11 +571,11 @@ animation-delay: -1.0s;
 
 @font-face {
 	font-family: 'fa-snapchat';
-	src:url('/Bombshell/images/fa-snapchat.eot?-73zac');
-	src:url('/Bombshell/images/fa-snapchat.eot?#iefix-73zac') format('embedded-opentype'),
-		url('/Bombshell/images/fa-snapchat.ttf?-73zac') format('truetype'),
-		url('/Bombshell/images/fa-snapchat.woff?-73zac') format('woff'),
-		url('/Bombshell/images/fa-snapchat.svg?-73zac#fa-snapchat') format('svg');
+	src:url('/images/fa-snapchat.eot?-73zac');
+	src:url('/images/fa-snapchat.eot?#iefix-73zac') format('embedded-opentype'),
+		url('/images/fa-snapchat.ttf?-73zac') format('truetype'),
+		url('/images/fa-snapchat.woff?-73zac') format('woff'),
+		url('/images/fa-snapchat.svg?-73zac#fa-snapchat') format('svg');
 }
 
 .fa-snapchat:before {
