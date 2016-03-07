@@ -192,45 +192,6 @@ background-size:cover;height:300px;padding-left:0px;padding-top:25%;
 }
 
 
-@media only screen and (max-width:1600px){
-  #contentblock{
-    padding-top:10%;
-    margin-top:17px;
-  }
-  #servicesBlock{
-  padding-top:10%;
-  margin-top:17px;
-  }
-
-  #partyBlock{
-    padding-top:10%;
-    margin-top:17px;
-  }
-
-  #storyBlock{
-    padding-top:10%;
-  }
-  #bookingBlock{
-    padding-top:10%;
-  }
-  #specialsBlock{
-    padding-top:10%;
-    margin-top:17px;
-  }
-  #giftCardBlock{
-    padding-top:10%;
-  }
-  #partyBlock{
-    padding-top:10%;
-  }
-  #blogBlock{
-    padding-top:10%;
-  }
-  #weddingBlock{
-    padding-top:10%;
-    margin-top:17px;
-  }
-}
 
 @media only screen and (max-width : 1000px) {
 
